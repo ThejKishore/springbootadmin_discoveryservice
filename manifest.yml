@@ -1,0 +1,9 @@
+---
+applications:
+- name: demobootadmin
+  memory: 1024M
+  instances: 1
+  path: target/demobootadmin-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  services:
+  - eurekaserver
